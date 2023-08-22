@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 13.0, macOS 10.15, *)
 struct LogoVersionPictureView: View {
     let imageName: String
     var body: some View {
@@ -22,7 +21,6 @@ struct LogoVersionPictureView: View {
     }
 }
 
-@available(iOS 13.0, macOS 10.15, *)
 struct LogoVersionPictureView_Previews: PreviewProvider {
     static var previews: some View {
         LogoVersionPictureView(imageName: "")

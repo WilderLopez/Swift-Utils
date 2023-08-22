@@ -1,8 +1,6 @@
 import Foundation
 import SwiftUI
 
-
-@available(iOS 13.0, macOS 10.15, *)
 public extension View {
     /// Applies the given transform if the given condition evaluates to `true`.
     /// - Parameters:

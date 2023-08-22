@@ -78,7 +78,7 @@ struct BottomCustomAlertModifier: ViewModifier {
 }
 
 extension View {
-    func bottomCustomAlert(text: String, isPresented: Binding<Bool>, backgroundColor: Color = .accentColor, foregroundColor: Color = .white, cornerRadius: CGFloat = 10) -> some View {
+    public func bottomCustomAlert(text: String, isPresented: Binding<Bool>, backgroundColor: Color = .accentColor, foregroundColor: Color = .white, cornerRadius: CGFloat = 10) -> some View {
         return self.modifier(BottomCustomAlertModifier(alertText: text, isPresented: isPresented, backgroundColor: backgroundColor, foregroundColor: foregroundColor, cornerRadius: cornerRadius))
     }
 }
